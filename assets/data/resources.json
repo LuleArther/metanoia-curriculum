@@ -1,0 +1,182 @@
+[
+    {
+      "id": "resource-1",
+      "title": "The Story of Plastic Documentary",
+      "description": "An eye-opening documentary about the global plastic crisis and its impact on the environment and communities around the world.",
+      "url": "https://www.storyofplastic.org/",
+      "type": "videos",
+      "modules": [1, 2],
+      "country": null
+    },
+    {
+      "id": "resource-2",
+      "title": "Ellen MacArthur Foundation - Circular Economy Introduction",
+      "description": "A comprehensive introduction to circular economy principles, with case studies and educational resources.",
+      "url": "https://ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview",
+      "type": "readings",
+      "modules": [2],
+      "country": null
+    },
+    {
+      "id": "resource-3",
+      "title": "Plastic Detective Worksheet",
+      "description": "A printable worksheet to help students track plastic waste in their community and analyze its sources and impacts.",
+      "url": "../assets/downloads/plastic_detective_worksheet.pdf",
+      "type": "worksheets",
+      "modules": [1],
+      "country": null
+    },
+    {
+      "id": "resource-4",
+      "title": "Systems Thinking: Iceberg Model Template",
+      "description": "A template to help students apply the Iceberg Model to analyze plastic waste challenges at different levels.",
+      "url": "../assets/downloads/iceberg_model_template.pdf",
+      "type": "worksheets",
+      "modules": [3],
+      "country": null
+    },
+    {
+      "id": "resource-5",
+      "title": "Loopy - Systems Mapping Tool",
+      "description": "A free, web-based tool for creating interactive causal loop diagrams to explore system dynamics.",
+      "url": "https://ncase.me/loopy/",
+      "type": "tools",
+      "modules": [3],
+      "country": null
+    },
+    {
+      "id": "resource-6",
+      "title": "Marine Debris Tracker App",
+      "description": "A mobile app for documenting plastic pollution and contributing to citizen science data collection.",
+      "url": "https://debristracker.org/",
+      "type": "tools",
+      "modules": [1, 7],
+      "country": null
+    },
+    {
+      "id": "resource-7",
+      "title": "LEAH Initiative School Programs",
+      "description": "Educational outreach programs addressing plastic waste challenges in Ugandan schools.",
+      "url": "https://leahinitiativeug.org/",
+      "type": "local",
+      "modules": [1, 6, 7],
+      "country": "Uganda"
+    },
+    {
+      "id": "resource-8",
+      "title": "Takataka Plastics Youth Innovation Project",
+      "description": "A social enterprise in Gulu that turns plastic waste into valuable products while creating employment for youth.",
+      "url": "https://takatakaenvironmental.com/",
+      "type": "local",
+      "modules": [2, 4, 5],
+      "country": "Uganda"
+    },
+    {
+      "id": "resource-9",
+      "title": "South African Waste Pickers Association",
+      "description": "An organization representing and supporting informal waste pickers in South Africa's recycling economy.",
+      "url": "https://www.groundwork.org.za/sawpa/",
+      "type": "local",
+      "modules": [1, 6],
+      "country": "South Africa"
+    },
+    {
+      "id": "resource-10",
+      "title": "PETCO Schools Competition",
+      "description": "An annual recycling competition for South African schools with resources and support for plastic waste initiatives.",
+      "url": "https://petco.co.za/schools-competition/",
+      "type": "local",
+      "modules": [1, 6, 7],
+      "country": "South Africa"
+    },
+    {
+      "id": "resource-11",
+      "title": "Plastic Bottle Community Garden",
+      "description": "A project guide for using plastic bottles to create vertical gardens and grow food in limited spaces.",
+      "url": "../assets/downloads/bottle_garden_guide.pdf",
+      "type": "project",
+      "modules": [2, 5],
+      "country": null
+    },
+    {
+      "id": "resource-12",
+      "title": "Plastic to Fabric Weaving Tutorial",
+      "description": "Step-by-step instructions for turning plastic bags into durable woven fabric for various applications.",
+      "url": "../assets/downloads/plastic_weaving_guide.pdf",
+      "type": "project",
+      "modules": [2, 5],
+      "country": null
+    },
+    {
+      "id": "resource-13",
+      "title": "School Waste Audit Guide",
+      "description": "A comprehensive guide to conducting a waste audit in your school to identify opportunities for waste reduction.",
+      "url": "../assets/downloads/school_waste_audit.pdf",
+      "type": "project",
+      "modules": [1, 3, 6],
+      "country": null
+    },
+    {
+      "id": "resource-14",
+      "title": "Plastic Planet: A Guide to Sustainable Living",
+      "description": "A practical guide with tips and strategies for reducing plastic consumption in daily life.",
+      "url": "../assets/downloads/sustainable_living_guide.pdf",
+      "type": "readings",
+      "modules": [1, 2, 8],
+      "country": null
+    },
+    {
+      "id": "resource-15",
+      "title": "The African Circular Economy Alliance",
+      "description": "A continental platform showcasing circular economy initiatives across Africa with case studies and resources.",
+      "url": "https://www.aceaafrica.org/",
+      "type": "readings",
+      "modules": [2, 6],
+      "country": null
+    },
+    {
+      "id": "resource-16",
+      "title": "Design Thinking for Plastic Waste Solutions",
+      "description": "An interactive worksheet for applying design thinking to develop innovative solutions for plastic waste challenges.",
+      "url": "../assets/downloads/design_thinking_worksheet.pdf",
+      "type": "worksheets",
+      "modules": [4, 5],
+      "country": null
+    },
+    {
+      "id": "resource-17",
+      "title": "Stakeholder Mapping Template",
+      "description": "A template to help students identify and analyze key stakeholders for their plastic waste initiatives.",
+      "url": "../assets/downloads/stakeholder_mapping.pdf",
+      "type": "worksheets",
+      "modules": [6],
+      "country": null
+    },
+    {
+      "id": "resource-18",
+      "title": "Message Mapping Guide for Environmental Communication",
+      "description": "A guide to developing effective messages for different audiences about plastic waste issues.",
+      "url": "../assets/downloads/message_mapping_guide.pdf",
+      "type": "worksheets",
+      "modules": [7],
+      "country": null
+    },
+    {
+      "id": "resource-19",
+      "title": "Personal Action Plan Template",
+      "description": "A template to help students develop SMART goals for reducing plastic waste in their daily lives.",
+      "url": "../assets/downloads/action_plan_template.pdf",
+      "type": "worksheets",
+      "modules": [8],
+      "country": null
+    },
+    {
+      "id": "resource-20",
+      "title": "African Youth Waste Network",
+      "description": "A network connecting young environmental leaders across Africa working on waste management initiatives.",
+      "url": "https://www.sst.org.za/african-youth-waste-network/",
+      "type": "local",
+      "modules": [6, 7, 8],
+      "country": null
+    }
+  ]

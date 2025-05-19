@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2: Reimagining Waste | Metanoia Curriculum</title>
+    <link rel="stylesheet" href="../../assets/css/light.css">
+    <link rel="stylesheet" id="theme-style" href="../../assets/css/light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container module-page">
+        <div class="module-header">
+            <div class="module-number">Module 2</div>
+            <h1>Reimagining Waste</h1>
+            <div class="subtitle">Introduction to Circular Economy Thinking</div>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <div class="progress-text">0% Complete</div>
+            </div>
+        </div>
+
+        <div class="big-question-banner">
+            <div class="icon"><i class="fas fa-question-circle"></i></div>
+            <div class="question-text">
+                <h2>Big Question</h2>
+                <p>How might we transform our "take-make-waste" approach to create systems where plastic never becomes waste?</p>
+            </div>
+        </div>
+
+        <div class="learning-objectives-section">
+            <h2>Learning Objectives</h2>
+            <p>By the end of this module, you will be able to:</p>
+            <ul class="learning-objectives">
+                <li>Distinguish between linear, recycling, and circular approaches to materials management</li>
+                <li>Identify at least three successful circular economy initiatives in African contexts</li>
+                <li>Design a simple circular system for a common plastic item in your community</li>
+            </ul>
+        </div>
+
+        <div class="module-navigation">
+            <div class="nav-section active" data-section="context">Context</div>
+            <div class="nav-section" data-section="activity">Core Activity</div>
+            <div class="nav-section" data-section="reflection">Reflection</div>
+            <div class="nav-section" data-section="extension">Extension</div>
+            <div class="nav-section" data-section="assessment">Assessment</div>
+        </div>
+
+        <div class="module-content">
+            <!-- Context Section -->
+            <section id="context" class="content-section active">
+                <h2>From Lines to Circles</h2>
+                
+                <h3>Beyond "Take-Make-Waste"</h3>
+                <p>Our current economic system largely follows a linear model: we extract resources, make products, and discard them as waste. This "take-make-waste" approach assumes infinite resources and somewhere to put our growing mountains of waste—assumptions our planet can no longer support.</p>
+                
+                <p>The circular economy offers a different vision. It mimics natural systems where nothing is wasted—one organism's waste becomes another's food. In a circular economy, products are designed to be reused, repaired, refurbished, remanufactured, and recycled, keeping materials in use for as long as possible.</p>
+                
+                <div class="info-graphic">
+                    <h4>Linear vs. Circular Economy</h4>
+                    <div class="graphic-container">
+                        <div class="graphic-item">
+                            <div class="graphic-title">Linear Economy</div>
+                            <div class="graphic-image">
+                                <img src="../../assets/images/linear-economy.svg" alt="Linear economy diagram showing take-make-waste model">
+                            </div>
+                            <div class="graphic-caption">Resources are extracted, transformed into products, used briefly, then discarded as waste.</div>
+                        </div>
+                        
+                        <div class="graphic-item">
+                            <div class="graphic-title">Circular Economy</div>
+                            <div class="graphic-image">
+                                <img src="../../assets/images/circular-economy.svg" alt="Circular economy diagram showing continuous resource flows">
+                            </div>
+                            <div class="graphic-caption">Products and materials are kept in use, regenerating natural systems rather than depleting them.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Circular Thinking in African Contexts</h3>
+                <p>Circular thinking isn't new to Africa. Traditional practices across the continent have long embraced principles of reuse and regeneration:</p>
+                
+                <div class="example-box">
+                    <div class="example-header uganda">
+                        <div class="country-flag">🇺🇬</div>
+                        <h4>Uganda Example</h4>
+                    </div>
+                    <p>The Buganda practice of <em>ensansa</em> (banana fiber) utilization demonstrates circularity, where every part of the banana plant serves a purpose—fruit for food, leaves for cooking, stems for mulch, and fibers for crafts and cordage.</p>
+                </div>
+                
+                <div class="example-box">
+                    <div class="example-header south-africa">
+                        <div class="country-flag">🇿🇦</div>
+                        <h4>South Africa Example</h4>
+                    </div>
+                    <p>Indigenous Khoisan communities practiced regenerative grazing, moving livestock to prevent overgrazing and allow natural restoration, maintaining ecological balance while producing food.</p>
+                </div>
+                
+                <p>Today, innovative circular approaches are emerging across both countries, often combining traditional wisdom with modern techniques and technologies:</p>
+                
+                <div class="tabs-container">
+                    <div class="tabs-header">
+                        <div class="tab active" data-tab="uganda-innovations">Uganda's Circular Innovations</div>
+                        <div class="tab" data-tab="sa-innovations">South Africa's Circular Pioneers</div>
+                    </div>
+                    
+                    <div class="tab-content active" id="uganda-innovations">
+                        <ul class="innovation-list">
+                            <li><strong>EcoPlastile</strong> transforms plastic waste into paving tiles, creating jobs while addressing waste</li>
+                            <li><strong>Reform Africa</strong> converts plastic waste into waterproof, durable school bags for children</li>
+                            <li><strong>The Kampala Jellitex Initiative</strong> transforms textile waste into new clothing and accessories</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="sa-innovations">
+                        <ul class="innovation-list">
+                            <li><strong>Rethaka's Repurpose Schoolbags</strong> are manufactured from recycled plastic bags with integrated solar panels that charge during the walk to school, providing light for evening studying</li>
+                            <li><strong>The Litterboom Project</strong> has installed simple but effective floating barriers across rivers in KwaZulu-Natal that have captured over 160,000 kg of plastic waste</li>
+                            <li><strong>Use-It</strong> converts waste materials into eco-friendly building materials and creates green jobs in the process</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="interaction-prompt" id="context-complete">
+                    <p>You've completed the context section! Ready to move on to the core activity?</p>
+                    <button class="btn-primary next-section" data-next="activity">Continue to Core Activity</button>
+                </div>
+            </section>
+            
+            <!-- Core Activity Section -->
+            <section id="activity" class="content-section">
+                <h2>Core Activity: Circular Solutions Workshop</h2>
+                
+                <div class="activity-intro">
+                    <div class="activity-meta">
+                        <div class="duration"><i class="fas fa-clock"></i> 60-75 minutes</div>
+                        <div class="group-size"><i class="fas fa-users"></i> Groups of 3-5</div>
+                        <div class="difficulty"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> Moderate</div>
+                    </div>
+                    
+                    <div class="materials-needed">
+                        <h4>Materials Needed:</h4>
+                        <ul>
+                            <li>Common plastic items (bottles, bags, containers, etc.)—one per group</li>
+                            <li>Large paper or cardboard sheets (reused packaging works well)</li>
+                            <li>Markers or colored pencils</li>
+                            <li>Reference images of circular economy examples (provided below)</li>
+                        </ul>
+                        
+                        <div class="materials-alternatives-toggle">
+                            <button class="toggle-btn" aria-expanded="false">
+                                View Materials Alternatives <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="materials-alternatives" hidden>
+                                <ul>
+                                    <li>Use natural materials to represent circular systems (seeds, leaves arranged in circles)</li>
+                                    <li>Create model circular systems using entirely locally sourced materials</li>
+                                    <li>Use oral storytelling traditions to explain circular concepts</li>
+                                    <li>Draw in dirt or sand using sticks to create circular diagrams</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activity-steps">
+                    <h3>Activity Steps</h3>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Exploring the Models (15 minutes)</h4>
+                            <p>Start by physically demonstrating three economic models:</p>
+                            <ul>
+                                <li><strong>Linear Economy:</strong> Stand in a line, passing an object from "extraction" through "production," "use," to "disposal"</li>
+                                <li><strong>Recycling Economy:</strong> Form a line that curves back at the end, with some material returning to production</li>
+                                <li><strong>Circular Economy:</strong> Form a circle, demonstrating how materials continually flow through the system</li>
+                            </ul>
+                            <p>Discuss the differences between these models and their environmental impacts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Circular Inspiration (15 minutes)</h4>
+                            <p>In small groups, examine examples of circular solutions from Uganda and South Africa. For each example, answer:</p>
+                            <ul>
+                                <li>What problem does this solution address?</li>
+                                <li>How does it keep materials in use?</li>
+                                <li>What value does it create (environmental, social, economic)?</li>
+                                <li>How does it connect to local culture or knowledge?</li>
+                            </ul>
+                            <div class="inspiration-gallery">
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/ecoplastile.jpg" alt="EcoPlastile's plastic pavers">
+                                    <div class="caption">EcoPlastile's plastic pavers made from waste</div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/images/repurpose-schoolbags.jpg" alt="Repurpose Schoolbags">
+                                    <div class="caption">Repurpose Schoolbags with integrated solar panels</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Circular Redesign Challenge (25 minutes)</h4>
+                            <p>Select a common plastic item and redesign both the product and its system to be truly circular. Consider:</p>
+                            <ul>
+                                <li><strong>Product design:</strong> How could it be made to last longer or be more easily repaired/recycled?</li>
+                                <li><strong>Business model:</strong> Could it be offered as a service instead of a product?</li>
+                                <li><strong>Materials:</strong> What sustainable materials could replace plastic?</li>
+                                <li><strong>End-of-life:</strong> How could components be separated and reused?</li>
+                            </ul>
+                            <p>Create a visual representation of your circular solution on large paper.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Solution Showcase (15-20 minutes)</h4>
+                            <p>Present your circular redesign to the class. After each presentation, other students offer:</p>
+                            <ul>
+                                <li>One "star" (something they liked)</li>
+                                <li>One "wish" (suggestion for improvement)</li>
+                            </ul>
+                            <p>As a class, vote on which solutions seem most feasible for local implementation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activity-adaptations">
+                    <h3>Country-Specific Adaptations</h3>
+                    
+                    <div class="adaptation uganda">
+                        <h4><span class="country-flag">🇺🇬</span> Uganda</h4>
+                        <p>Focus particularly on solutions that can operate without reliable electricity or advanced technology. Emphasize community-based systems that create local employment.</p>
+                    </div>
+                    
+                    <div class="adaptation south-africa">
+                        <h4><span class="country-flag">🇿🇦</span> South Africa</h4>
+                        <p>Include discussion of formal recycling infrastructure and how circular systems might integrate with existing waste management. Consider scalable solutions that could work in both urban and township settings.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-completion">
+                    <h3>Activity Completion</h3>
+                    <p>After completing the activity, take a photo of your circular redesign and upload it here or add it to your portfolio.</p>
+                    
+                    <div class="completion-form">
+                        <div class="upload-container">
+                            <label for="redesign-upload" class="upload-label">
+                                <i class="fas fa-upload"></i>
+                                <span>Upload your circular redesign</span>
+                            </label>
+                            <input type="file" id="redesign-upload" class="file-upload" accept="image/*">
+                        </div>
+                        
+                        <div class="text-input">
+                            <label for="activity-notes">Activity Notes:</label>
+                            <textarea id="activity-notes" placeholder="Describe your circular solution and what you learned from the process..."></textarea>
+                        </div>
+                        
+                        <button class="btn-primary mark-complete" id="activity-complete">Mark Activity as Complete</button>
+                    </div>
+                </div>
+                
+                <div class="interaction-prompt">
+                    <p>You've completed the core activity! Ready to move on to reflection?</p>
+                    <button class="btn-primary next-section" data-next="reflection">Continue to Reflection</button>
+                </div>
+            </section>
+            
+            <!-- Reflection Section -->
+            <section id="reflection" class="content-section">
+                <h2>Guided Reflection</h2>
+                
+                <div class="reflection-intro">
+                    <p>Take time to reflect on what you've learned and experienced in this module. These reflections will help deepen your understanding and connect concepts to your own life and community.</p>
+                </div>
+                
+                <div class="reflection-prompts">
+                    <div class="reflection-prompt">
+                        <h3>Systems Perspective</h3>
+                        <p>How did thinking in circles rather than lines change your approach to the plastic item? What new possibilities emerged?</p>
+                        <textarea class="reflection-input" placeholder="Enter your reflection here..."></textarea>
+                    </div>
+                    
+                    <div class="reflection-prompt">
+                        <h3>Cultural Connection</h3>
+                        <p>What traditional practices in your family or community already demonstrate circular principles? How could these inform modern solutions?</p>
+                        <textarea class="reflection-input" placeholder="Enter your reflection here..."></textarea>
+                    </div>
+                    
+                    <div class="reflection-prompt">
+                        <h3>Implementation Reality</h3>
+                        <p>What challenges might your circular solution face in your community? What would make it easier to implement?</p>
+                        <textarea class="reflection-input" placeholder="Enter your reflection here..."></textarea>
+                    </div>
+                    
+                    <div class="reflection-prompt">
+                        <h3>Value Creation</h3>
+                        <p>Beyond reducing waste, what additional benefits (jobs, skills, community connections) could your circular solution create?</p>
+                        <textarea class="reflection-input" placeholder="Enter your reflection here..."></textarea>
+                    </div>
+                    
+                    <div class="reflection-prompt">
+                        <h3>Personal Shift</h3>
+                        <p>Has this activity changed how you think about "waste"? What's one thing you'll do differently going forward?</p>
+                        <textarea class="reflection-input" placeholder="Enter your reflection here..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="save-reflections">
+                    <button class="btn-primary save-reflection-btn">Save Reflections</button>
+                </div>
+                
+                <div class="interaction-prompt">
+                    <p>You've completed your reflections! Ready to explore extension activities?</p>
+                    <button class="btn-primary next-section" data-next="extension">Continue to Extension Activities</button>
+                </div>
+            </section>
+            
+            <!-- Extension Section -->
+            <section id="extension" class="content-section">
+                <h2>Take It Further</h2>
+                
+                <div class="extension-intro">
+                    <p>Ready to deepen your understanding of circular economy principles? Explore these additional resources and activities to extend your learning.</p>
+                </div>
+                
+                <div class="country-specific-resources">
+                    <div class="country-resources uganda">
+                        <h3><span class="country-flag">🇺🇬</span> Uganda-Specific Resources</h3>
+                        <ul class="resource-list">
+                            <li>
+                                <a href="https://www.atcuganda.org/" target="_blank" class="resource-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="resource-title">Appropriate Technology Centre for Water and Sanitation</span>
+                                </a>
+                                <p class="resource-desc">Explore their work on waste upcycling and sustainable water management solutions.</p>
+                            </li>
+                            <li>
+                                <a href="https://www.uiri.go.ug/" target="_blank" class="resource-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="resource-title">Uganda Industrial Research Institute's waste upcycling initiatives</span>
+                                </a>
+                                <p class="resource-desc">Learn about government-supported research on waste transformation.</p>
+                            </li>
+                            <li>
+                                <a href="#" class="resource-link">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span class="resource-title">Community-based plastic collection programs in Kampala and Gulu</span>
+                                </a>
+                                <p class="resource-desc">Case studies of successful community initiatives (downloadable PDF).</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="country-resources south-africa">
+                        <h3><span class="country-flag">🇿🇦</span> South Africa-Specific Resources</h3>
+                        <ul class="resource-list">
+                            <li>
+                                <a href="https://africanelectiron.com/acen/nations/south-africa" target="_blank" class="resource-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="resource-title">African Circular Economy Network's South African chapter</span>
+                                </a>
+                                <p class="resource-desc">Connect with local circular economy practitioners and case studies.</p>
+                            </li>
+                            <li>
+                                <a href="https://www.greencape.co.za/content/sector/circular-economy" target="_blank" class="resource-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="resource-title">GreenCape's resources on circular economy opportunities</span>
+                                </a>
+                                <p class="resource-desc">Market intelligence reports and business opportunities in the circular economy.</p>
+                            </li>
+                            <li>
+                                <a href="https://www.environment.gov.za/sites/default/files/docs/2020nationalwaste_managementstrategy1.pdf" target="_blank" class="resource-link">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span class="resource-title">South Africa's National Waste Management Strategy</span>
+                                </a>
+                                <p class="resource-desc">Official policy document supporting circular principles.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="general-resources">
+                    <h3>For All Students</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.ellenmacarthurfoundation.org/resources/videos/re-thinking-progress-the-circular-economy" target="_blank" class="resource-link">
+                                <i class="fas fa-video"></i>
+                                <span class="resource-title">Ellen MacArthur Foundation's "Re-thinking Progress" video</span>
+                            </a>
+                            <p class="resource-desc">Available with reduced data versions for low-bandwidth environments.</p>
+                        </li>
+                        <li>
+                            <a href="#" class="resource-link">
+                                <i class="fas fa-tasks"></i>
+                                <span class="resource-title">Project Opportunity: Design and implement a small-scale circular solution for your school</span>
+                            </a>
+                            <p class="resource-desc">A guided template for creating an actionable circular project.</p>
+                        </li>
+                        <li>
+                            <a href="#" class="resource-link">
+                                <i class="fas fa-comments"></i>
+                                <span class="resource-title">Community Connection: Interview local craftspeople who reuse or repurpose materials</span>
+                            </a>
+                            <p class="resource-desc">Interview guide and reflection questions provided.</p>
+                        </li>
+                        <li>
+                            <a href="https://www.aceaafrica.org/" target="_blank" class="resource-link">
+                                <i class="fas fa-globe-africa"></i>
+                                <span class="resource-title">African Circular Economy Alliance website</span>
+                            </a>
+                            <p class="resource-desc">Continental case studies and resources specific to African contexts.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="interaction-prompt">
+                    <p>Ready to test your knowledge of circular economy principles?</p>
+                    <button class="btn-primary next-section" data-next="assessment">Continue to Assessment</button>
+                </div>
+            </section>
+            
+            <!-- Assessment Section -->
+            <section id="assessment" class="content-section">
+                <h2>Knowledge Check</h2>
+                
+                <div class="assessment-intro">
+                    <p>Test your understanding of circular economy concepts with this short quiz. Your results will help you identify areas for further exploration.</p>
+                </div>
+                
+                <div class="quiz-container" id="module2-quiz"></div>
+                
+                <div class="interaction-prompt">
+                    <p>You've completed Module 2! Ready to move on to Module 3: Seeing Beneath the Surface?</p>
+                    <div class="next-actions">
+                        <a href="module3.html" class="btn-primary">Next Module</a>
+                        <a href="../index.html" class="btn-secondary">Return to Dashboard</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="career-connection-panel">
+            <div class="panel-header">
+                <h3><i class="fas fa-briefcase"></i> Career Connection</h3>
+                <button class="panel-toggle" aria-label="Toggle career panel"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            
+            <div class="panel-content">
+                <div class="career-spotlight">
+                    <h4>Career Spotlight: Circular Economy Consultant</h4>
+                    <div class="career-profile">
+                        <div class="profile-image">
+                            <img src="../../assets/images/career-profile-circular.jpg" alt="Thabo Makhetha, Circular Economy Specialist">
+                        </div>
+                        <div class="profile-details">
+                            <p class="profile-name">Thabo Makhetha, Circular Economy Specialist (South Africa)</p>
+                            <p class="profile-quote">"I help businesses redesign their operations to eliminate waste and create new value. The circular economy is creating entirely new career paths that didn't exist when I was in school. Every sector needs people who understand these principles."</p>
+                            <div class="profile-info">
+                                <p><strong>Education:</strong> Business degree with environmental management certification</p>
+                                <p><strong>Skills used:</strong> Systems analysis, business model design, stakeholder engagement</p>
+                                <p><strong>Daily work:</strong> "I analyze material flows, identify waste streams that could become resources, and help design new processes and partnerships."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="module-skills">
+                    <h4>Module 2 Career Skills</h4>
+                    <p>The activities you're completing develop these in-demand workplace skills:</p>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skill-name">Resource flow analysis</span>
+                            <span class="skill-context">(Used in: Supply Chain Management, Industrial Ecology, Sustainability Consulting)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Business model innovation</span>
+                            <span class="skill-context">(Used in: Entrepreneurship, Strategy Development, Product Management)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Systems redesign</span>
+                            <span class="skill-context">(Used in: Industrial Design, Process Engineering, Urban Planning)</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Value chain mapping</span>
+                            <span class="skill-context">(Used in: Business Development, Impact Assessment, Manufacturing)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/quiz.js"></script>
+    <script src="../../assets/js/localstorage.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Highlight current page in navigation
+            highlightCurrentPage();
+            
+            // Initialize module navigation
+            initModuleNavigation();
+            
+            // Initialize tabs
+            initTabs();
+            
+            // Initialize materials toggle
+            initMaterialsToggle();
+            
+            // Initialize career panel
+            initCareerPanel();
+            
+            // Initialize quiz
+            initQuiz('module2-quiz', 'module2-quiz');
+            
+            // Load progress
+            loadModuleProgress();
+            
+            // Initialize activity completion
+            initActivityCompletion();
+            
+            // Initialize reflection saving
+            initReflectionSaving();
+        });
+        
+        // Module navigation
+        function initModuleNavigation() {
+            const navSections = document.querySelectorAll('.nav-section');
+            const contentSections = document.querySelectorAll('.content-section');
+            
+            navSections.forEach(nav => {
+                nav.addEventListener('click', () => {
+                    const targetSection = nav.dataset.section;
+                    
+                    // Update nav active state
+                    navSections.forEach(n => n.classList.remove('active'));
+                    nav.classList.add('active');
+                    
+                    // Show target section, hide others
+                    contentSections.forEach(section => {
+                        if (section.id === targetSection) {
+                            section.classList.add('active');
+                        } else {
+                            section.classList.remove('active');
+                        }
+                    });
+                });
+            });
+            
+            // Next section buttons
+            document.querySelectorAll('.next-section').forEach(button => {
+                button.addEventListener('click', () => {
+                    const nextSection = button.dataset.next;
+                    
+                    // Update progress based on section
+                    updateProgress(nextSection);
+                    
+                    // Click the corresponding nav section
+                    document.querySelector(`.nav-section[data-section="${nextSection}"]`).click();
+                    
+                    // Scroll to top of section
+                    window.scrollTo({
+                        top: document.querySelector('.module-navigation').offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+        
+        // Initialize tabs
+        function initTabs() {
+            const tabs = document.querySelectorAll('.tab');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.dataset.tab;
+                    
+                    // Update tab active state
+                    tab.parentElement.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    // Show target content, hide others
+                    const tabContents = tab.closest('.tabs-container').querySelectorAll('.tab-content');
+                    tabContents.forEach(content => {
+                        if (content.id === tabId) {
+                            content.classList.add('active');
+                        } else {
+                            content.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        }
+        
+        // Initialize materials toggle
+        function initMaterialsToggle() {
+            const toggleBtn = document.querySelector('.materials-alternatives-toggle .toggle-btn');
+            
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', () => {
+                    const alternativesSection = document.querySelector('.materials-alternatives');
+                    const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+                    
+                    toggleBtn.setAttribute('aria-expanded', !isExpanded);
+                    alternativesSection.hidden = isExpanded;
+                    
+                    toggleBtn.querySelector('i').className = isExpanded ? 
+                        'fas fa-chevron-down' : 'fas fa-chevron-up';
+                    
+                    toggleBtn.innerHTML = isExpanded ? 
+                        'View Materials Alternatives <i class="fas fa-chevron-down"></i>' : 
+                        'Hide Materials Alternatives <i class="fas fa-chevron-up"></i>';
+                });
+            }
+        }
+        
+        // Initialize career panel
+        function initCareerPanel() {
+            const panelToggle = document.querySelector('.career-connection-panel .panel-toggle');
+            
+            if (panelToggle) {
+                panelToggle.addEventListener('click', () => {
+                    const panel = document.querySelector('.career-connection-panel');
+                    panel.classList.toggle('collapsed');
+                    
+                    panelToggle.querySelector('i').className = panel.classList.contains('collapsed') ? 
+                        'fas fa-chevron-up' : 'fas fa-chevron-down';
+                });
+            }
+        }
+        
+        // Load and update module progress
+        function loadModuleProgress() {
+            const moduleProgress = getModuleProgress(2);
+            updateProgressBar(moduleProgress);
+        }
+        
+        function updateProgress(section) {
+            let progress = getModuleProgress(2);
+            
+            // Update progress based on current section
+            switch(section) {
+                case 'activity':
+                    progress = Math.max(progress, 25);
+                    break;
+                case 'reflection':
+                    progress = Math.max(progress, 50);
+                    break;
+                case 'extension':
+                    progress = Math.max(progress, 75);
+                    break;
+                case 'assessment':
+                    progress = Math.max(progress, 90);
+                    break;
+            }
+            
+            // Save progress
+            saveModuleProgress(2, progress);
+            updateProgressBar(progress);
+        }
+        
+        function updateProgressBar(progress) {
+            const progressFill = document.querySelector('.progress-fill');
+            const progressText = document.querySelector('.progress-text');
+            
+            if (progressFill && progressText) {
+                progressFill.style.width = `${progress}%`;
+                progressText.textContent = `${progress}% Complete`;
+            }
+        }
+        
+        // Activity completion
+        function initActivityCompletion() {
+            const completeButton = document.getElementById('activity-complete');
+            
+            if (completeButton) {
+                // Check if already completed
+                if (isActivityCompleted('module2-activity')) {
+                    completeButton.textContent = 'Activity Completed';
+                    completeButton.disabled = true;
+                    completeButton.classList.add('completed');
+                }
+                
+                completeButton.addEventListener('click', () => {
+                    markActivityCompleted('module2-activity');
+                    completeButton.textContent = 'Activity Completed';
+                    completeButton.disabled = true;
+                    completeButton.classList.add('completed');
+                    
+                    // Update progress
+                    let progress = getModuleProgress(2);
+                    progress = Math.max(progress, 50);
+                    saveModuleProgress(2, progress);
+                    updateProgressBar(progress);
+                });
+            }
+        }
+        
+        // Reflection saving
+        function initReflectionSaving() {
+            const saveButton = document.querySelector('.save-reflection-btn');
+            const reflectionInputs = document.querySelectorAll('.reflection-input');
+            
+            // Load saved reflections
+            reflectionInputs.forEach((input, index) => {
+                const savedValue = localStorage.getItem(`module2-reflection-${index}`);
+                if (savedValue) {
+                    input.value = savedValue;
+                }
+            });
+            
+            if (saveButton) {
+                saveButton.addEventListener('click', () => {
+                    // Save each reflection
+                    reflectionInputs.forEach((input, index) => {
+                        localStorage.setItem(`module2-reflection-${index}`, input.value);
+                    });
+                    
+                    // Update button to show saved
+                    saveButton.textContent = 'Reflections Saved!';
+                    setTimeout(() => {
+                        saveButton.textContent = 'Save Reflections';
+                    }, 2000);
+                    
+                    // Update progress
+                    let progress = getModuleProgress(2);
+                    progress = Math.max(progress, 75);
+                    saveModuleProgress(2, progress);
+                    updateProgressBar(progress);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

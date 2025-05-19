@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metanoia: Transforming Plastic into Potential</title>
+  <link rel="stylesheet" href="/assets/css/light.css">
+  <link rel="stylesheet" href="/assets/libs/aos.css">
+</head>
+<body>
+  <!-- Role Selection Overlay -->
+  <div id="role-modal" class="modal-overlay">
+    <div class="modal-content">
+      <h1>Welcome to Metanoia: Transforming Plastic into Potential</h1>
+      <p>A journey of transformation for plastic waste education.</p>
+      
+      <div class="role-buttons">
+        <button id="student-btn" class="role-btn student-btn">
+          <img src="/assets/images/icons/student.svg" alt="">
+          I'm a Student
+        </button>
+        <button id="teacher-btn" class="role-btn teacher-btn">
+          <img src="/assets/images/icons/teacher.svg" alt="">
+          I'm a Teacher
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/assets/libs/aos.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/role-switch.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init();
+    
+    // Check if role already exists
+    document.addEventListener('DOMContentLoaded', function() {
+      checkRole();
+    });
+  </script>
+</body>
+</html>
+

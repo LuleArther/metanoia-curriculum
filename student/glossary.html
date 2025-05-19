@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary | Metanoia Curriculum</title>
+    <link rel="stylesheet" href="../assets/css/light.css">
+    <link rel="stylesheet" id="theme-style" href="../assets/css/light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container glossary-page">
+        <div class="page-header">
+            <h1>Glossary</h1>
+            <div class="subtitle">Key terms and concepts from the Metanoia curriculum</div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="glossary-search" placeholder="Search glossary terms...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="alphabet-nav">
+            <ul id="letter-nav">
+                <!-- Will be populated by JavaScript -->
+            </ul>
+        </div>
+
+        <div class="glossary-container">
+            <!-- Will be populated by JavaScript -->
+        </div>
+
+        <div class="no-results-message" style="display: none;">
+            <p>No glossary terms match your search. Please try a different term.</p>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/glossary.js"></script>
+    <script src="../assets/js/localstorage.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Highlight current page in navigation
+            highlightCurrentPage();
+            
+            // Initialize glossary functionality
+            initGlossary();
+        });
+    </script>
+</body>
+</html>

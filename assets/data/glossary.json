@@ -1,0 +1,137 @@
+[
+    {
+      "term": "Balancing Relationship",
+      "definition": "A causal relationship where change in one variable counteracts change in another, creating stability or resistance.",
+      "modules": ["Module 3"]
+    },
+    {
+      "term": "Causal Loop",
+      "definition": "A visualization tool showing how variables in a system influence each other, with arrows indicating causal relationships.",
+      "modules": ["Module 3"]
+    },
+    {
+      "term": "Circular Economy",
+      "definition": "An economic system aimed at eliminating waste by keeping materials in use through reuse, repair, refurbishment, and recycling, in contrast to the \"take-make-dispose\" linear model.",
+      "modules": ["Module 2", "Module 5"]
+    },
+    {
+      "term": "Design Thinking",
+      "definition": "A human-centered approach to problem-solving that includes empathizing with users, defining problems, ideating solutions, prototyping, and testing.",
+      "modules": ["Module 5"]
+    },
+    {
+      "term": "Events",
+      "definition": "The visible occurrences or incidents that can be readily observed (top level of Iceberg Model).",
+      "modules": ["Module 3"]
+    },
+    {
+      "term": "Iceberg Model",
+      "definition": "A systems thinking tool that distinguishes between visible events and the underlying patterns, structures, and mental models that cause them.",
+      "modules": ["Module 3"]
+    },
+    {
+      "term": "Linear Economy",
+      "definition": "The traditional economic model where resources are extracted, used to make products, and disposed of as waste (\"take-make-waste\").",
+      "modules": ["Module 2"]
+    },
+    {
+      "term": "Mental Models",
+      "definition": "The deeply held beliefs, assumptions, and values that shape how we see the world (deepest level of Iceberg Model).",
+      "modules": ["Module 3", "Module 4"]
+    },
+    {
+      "term": "Metanoia",
+      "definition": "From ancient Greek, meaning \"a transformative change of heart or mind\" - the profound shift in thinking that this curriculum aims to inspire.",
+      "modules": ["Module 1"]
+    },
+    {
+      "term": "Patterns",
+      "definition": "Trends or recurring events that emerge over time (second level of Iceberg Model).",
+      "modules": ["Module 3"]
+    },
+    {
+      "term": "Reinforcing Relationship",
+      "definition": "A causal relationship where change in one variable amplifies change in another, creating escalation or growth.",
+      "modules": ["Module 3"]
+    },
+    {
+      "term": "SMART Criteria",
+      "definition": "Framework for setting effective goals that are Specific, Measurable, Achievable, Relevant, and Time-bound.",
+      "modules": ["Module 8"]
+    },
+    {
+      "term": "Stakeholder",
+      "definition": "Any individual, group, or organization that affects or is affected by a particular issue or initiative.",
+      "modules": ["Module 6"]
+    },
+    {
+      "term": "Structures",
+      "definition": "The physical infrastructures, policies, or systems that create patterns (third level of Iceberg Model).",
+      "modules": ["Module 3"]
+    },
+    {
+      "term": "Systems Thinking",
+      "definition": "An approach to understanding how different elements within a complex system interact and influence each other.",
+      "modules": ["Module 3", "Module 6"]
+    },
+    {
+      "term": "Ubuntu",
+      "definition": "South African concept meaning \"I am because we are,\" emphasizing our interconnectedness and collective wellbeing.",
+      "modules": ["Module 6", "Module 8"]
+    },
+    {
+      "term": "Upcycling",
+      "definition": "The process of transforming waste materials into new products of higher quality or environmental value.",
+      "modules": ["Module 2", "Module 5"]
+    },
+    {
+      "term": "Assumption Flipping",
+      "definition": "A technique for challenging established ideas by considering the opposite of what is typically assumed to be true.",
+      "modules": ["Module 4"]
+    },
+    {
+      "term": "Beginner's Mind",
+      "definition": "A concept from Zen Buddhism (shoshin) that refers to approaching subjects with openness and without preconceptions, as if learning about them for the first time.",
+      "modules": ["Module 4"]
+    },
+    {
+      "term": "Collective Impact",
+      "definition": "An approach to solving complex social problems through coordinated efforts of multiple organizations and stakeholders across different sectors.",
+      "modules": ["Module 6"]
+    },
+    {
+      "term": "Extended Producer Responsibility",
+      "definition": "A policy approach where producers take responsibility for the environmental impacts of their products throughout the entire life cycle, including end-of-life management.",
+      "modules": ["Module 7"]
+    },
+    {
+      "term": "Frugal Innovation",
+      "definition": "The process of reducing the complexity and cost of goods while delivering high-value solutions that work well with limited resources.",
+      "modules": ["Module 5"]
+    },
+    {
+      "term": "Jugaad",
+      "definition": "A flexible approach to problem-solving that uses limited resources in an innovative way, often associated with ingenious improvisation.",
+      "modules": ["Module 5"]
+    },
+    {
+      "term": "Leverage Points",
+      "definition": "Places within a complex system where a small shift can produce big changes in everything else, often the most effective places to intervene in a system.",
+      "modules": ["Module 3"]
+    },
+    {
+      "term": "Microplastics",
+      "definition": "Tiny plastic particles less than 5mm in size that result from the breakdown of larger plastics or are manufactured at this size, which can accumulate in water bodies and organisms.",
+      "modules": ["Module 1"]
+    },
+    {
+      "term": "Polymers",
+      "definition": "Large molecules composed of many repeated subunits, which form the basis of synthetic plastics.",
+      "modules": ["Module 1"]
+    },
+    {
+      "term": "Regenerative Design",
+      "definition": "An approach to design that seeks to restore, renew, or revitalize energy and materials, creating sustainable systems that integrate the needs of society with the integrity of nature.",
+      "modules": ["Module 2"]
+    }
+  ]

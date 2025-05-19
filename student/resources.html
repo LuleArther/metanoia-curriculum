@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Metanoia Curriculum</title>
+    <link rel="stylesheet" href="../assets/css/light.css">
+    <link rel="stylesheet" id="theme-style" href="../assets/css/light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container resources-page">
+        <div class="page-header">
+            <h1>Student Resources</h1>
+            <div class="subtitle">Supporting materials, tools, and references for your learning journey</div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="resource-search" placeholder="Search resources...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+            
+            <div class="filter-container">
+                <select id="resource-filter">
+                    <option value="all">All Resources</option>
+                    <option value="readings">Readings</option>
+                    <option value="videos">Videos</option>
+                    <option value="tools">Digital Tools</option>
+                    <option value="worksheets">Worksheets</option>
+                    <option value="local">Local Organizations</option>
+                    <option value="project">Project Ideas</option>
+                </select>
+                
+                <select id="module-filter">
+                    <option value="all">All Modules</option>
+                    <option value="1">Module 1: Awakening to Plastic</option>
+                    <option value="2">Module 2: Reimagining Waste</option>
+                    <option value="3">Module 3: Seeing Beneath the Surface</option>
+                    <option value="4">Module 4: Unlearning to Innovate</option>
+                    <option value="5">Module 5: Design for Impact</option>
+                    <option value="6">Module 6: Collective Impact</option>
+                    <option value="7">Module 7: Advocacy in Action</option>
+                    <option value="8">Module 8: Sustainable Leadership</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="resources-container">
+            <!-- Will be populated by JavaScript -->
+        </div>
+
+        <div class="bookmarked-resources">
+            <h2>My Bookmarked Resources <button id="toggle-bookmarks" class="btn-icon" aria-label="Toggle bookmarks"><i class="fas fa-chevron-down"></i></button></h2>
+            <div id="bookmarks-container" class="bookmarks-list">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="no-results-message" style="display: none;">
+            <p>No resources match your search. Please try different search terms or filters.</p>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/localstorage.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Highlight current page in navigation
+            highlightCurrentPage();
+            
+            // Initialize resources functionality
+            initResources();
+        });
+
+        function initResources() {
+            // Fetch resource data
+            fetch('../assets/data/resources.json')
+                .then(response => response.json())
+                .then(data => {
+                    displayResources(data);
+                    setupSearch(data);
+                    displayBookmarks();
+                })
+                .catch(error => {
+                    console.error('Error loading resources:', error);
+                    document.querySelector('.resources-container').innerHTML = `
+                        <div class="error-message">
+                            <p>Sorry, there was an error loading resources. Please try again later.</p>
+                        </div>
+                    `;
+                });
+
+            // Set up bookmark toggle
+            document.getElementById('toggle-bookmarks').addEventListener('click', function() {
+                const bookmarksContainer = document.getElementById('bookmarks-container');
+                const isCollapsed = bookmarksContainer.classList.toggle('collapsed');
+                this.querySelector('i').className = isCollapsed ? 'fas fa-chevron-down' : 'fas fa-chevron-up';
+            });
+        }
+
+        function displayResources(resources) {
+            const container = document.querySelector('.resources-container');
+            container.innerHTML = '';
+
+            // Group resources by type
+            const resourceTypes = {
+                'readings': { icon: 'fa-book', title: 'Readings' },
+                'videos': { icon: 'fa-video', title: 'Videos' },
+                'tools': { icon: 'fa-wrench', title: 'Digital Tools' },
+                'worksheets': { icon: 'fa-file-alt', title: 'Worksheets' },
+                'local': { icon: 'fa-map-marker-alt', title: 'Local Organizations' },
+                'project': { icon: 'fa-lightbulb', title: 'Project Ideas' }
+            };
+
+            // Create a section for each resource type
+            Object.keys(resourceTypes).forEach(type => {
+                const typeResources = resources.filter(r => r.type === type);
+                if (typeResources.length === 0) return;
+
+                const section = document.createElement('section');
+                section.classList.add('resource-section');
+                section.dataset.type = type;
+
+                section.innerHTML = `
+                    <h2><i class="fas ${resourceTypes[type].icon}"></i> ${resourceTypes[type].title}</h2>
+                    <div class="resources-grid">
+                        ${typeResources.map(resource => createResourceCard(resource)).join('')}
+                    </div>
+                `;
+
+                container.appendChild(section);
+            });
+        }
+
+        function createResourceCard(resource) {
+            // Check if this resource is bookmarked
+            const bookmarks = getAllBookmarks();
+            const isBookmarked = bookmarks.some(b => b.url === resource.url || b.id === resource.id);
+
+            // Country flag for location-specific resources
+            let countryFlag = '';
+            if (resource.country) {
+                if (resource.country === 'Uganda') {
+                    countryFlag = '<span class="country-flag uganda" title="Uganda Resource">🇺🇬</span>';
+                } else if (resource.country === 'South Africa') {
+                    countryFlag = '<span class="country-flag south-africa" title="South Africa Resource">🇿🇦</span>';
+                }
+            }
+
+            // Module badges
+            const moduleBadges = resource.modules ? resource.modules.map(m => 
+                `<span class="module-badge" title="Module ${m}">M${m}</span>`
+            ).join('') : '';
+
+            return `
+                <div class="resource-card" data-type="${resource.type}" data-modules="${resource.modules?.join(',') || ''}">
+                    <div class="resource-header">
+                        <h3 class="resource-title">${resource.title}</h3>
+                        <button class="bookmark-btn ${isBookmarked ? 'bookmarked' : ''}" 
+                                data-id="${resource.id}" 
+                                data-url="${resource.url}" 
+                                data-title="${resource.title}"
+                                aria-label="${isBookmarked ? 'Remove bookmark' : 'Bookmark this resource'}">
+                            <i class="fas ${isBookmarked ? 'fa-bookmark' : 'fa-bookmark-o'}"></i>
+                        </button>
+                    </div>
+                    <div class="resource-content">
+                        <p>${resource.description}</p>
+                    </div>
+                    <div class="resource-footer">
+                        <div class="resource-tags">
+                            ${countryFlag}
+                            ${moduleBadges}
+                        </div>
+                        <a href="${resource.url}" class="resource-link" target="_blank" rel="noopener noreferrer">
+                            Access Resource <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function setupSearch(resources) {
+            const searchInput = document.getElementById('resource-search');
+            const searchButton = document.getElementById('search-button');
+            const typeFilter = document.getElementById('resource-filter');
+            const moduleFilter = document.getElementById('module-filter');
+
+            // Search and filter function
+            function filterResources() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                const typeValue = typeFilter.value;
+                const moduleValue = moduleFilter.value;
+
+                let filtered = resources;
+
+                // Apply search term filter
+                if (searchTerm) {
+                    filtered = filtered.filter(resource => 
+                        resource.title.toLowerCase().includes(searchTerm) || 
+                        resource.description.toLowerCase().includes(searchTerm)
+                    );
+                }
+
+                // Apply type filter
+                if (typeValue !== 'all') {
+                    filtered = filtered.filter(resource => resource.type === typeValue);
+                }
+
+                // Apply module filter
+                if (moduleValue !== 'all') {
+                    filtered = filtered.filter(resource => 
+                        resource.modules && resource.modules.includes(parseInt(moduleValue))
+                    );
+                }
+
+                // Show filtered resources
+                if (filtered.length === 0) {
+                    document.querySelector('.resources-container').innerHTML = '';
+                    document.querySelector('.no-results-message').style.display = 'block';
+                } else {
+                    document.querySelector('.no-results-message').style.display = 'none';
+                    displayResources(filtered);
+                    
+                    // Re-attach bookmark handlers after redisplaying resources
+                    attachBookmarkHandlers();
+                }
+            }
+
+            // Attach event listeners
+            searchInput.addEventListener('input', filterResources);
+            searchButton.addEventListener('click', filterResources);
+            typeFilter.addEventListener('change', filterResources);
+            moduleFilter.addEventListener('change', filterResources);
+        }
+
+        function displayBookmarks() {
+            const bookmarksContainer = document.getElementById('bookmarks-container');
+            const bookmarks = getAllBookmarks();
+
+            if (bookmarks.length === 0) {
+                bookmarksContainer.innerHTML = '<p class="no-bookmarks">You haven\'t bookmarked any resources yet.</p>';
+                return;
+            }
+
+            bookmarksContainer.innerHTML = `
+                <div class="bookmarks-grid">
+                    ${bookmarks.map(bookmark => `
+                        <div class="bookmark-item">
+                            <a href="${bookmark.url}" target="_blank" rel="noopener noreferrer">${bookmark.title}</a>
+                            <button class="remove-bookmark" data-url="${bookmark.url}" aria-label="Remove bookmark">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+
+            // Attach event listeners to remove buttons
+            bookmarksContainer.querySelectorAll('.remove-bookmark').forEach(button => {
+                button.addEventListener('click', function() {
+                    const url = this.dataset.url;
+                    removeBookmark(url);
+                    displayBookmarks();
+                    
+                    // Update bookmark status on resource cards
+                    document.querySelectorAll(`.bookmark-btn[data-url="${url}"]`).forEach(btn => {
+                        btn.classList.remove('bookmarked');
+                        btn.querySelector('i').className = 'fas fa-bookmark-o';
+                    });
+                });
+            });
+        }
+
+        function attachBookmarkHandlers() {
+            document.querySelectorAll('.bookmark-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const id = this.dataset.id;
+                    const url = this.dataset.url;
+                    const title = this.dataset.title;
+                    
+                    if (this.classList.contains('bookmarked')) {
+                        // Remove bookmark
+                        removeBookmark(url);
+                        this.classList.remove('bookmarked');
+                        this.querySelector('i').className = 'fas fa-bookmark-o';
+                        this.setAttribute('aria-label', 'Bookmark this resource');
+                    } else {
+                        // Add bookmark
+                        addBookmark(url, title);
+                        this.classList.add('bookmarked');
+                        this.querySelector('i').className = 'fas fa-bookmark';
+                        this.setAttribute('aria-label', 'Remove bookmark');
+                    }
+                    
+                    // Update bookmarks display
+                    displayBookmarks();
+                });
+            });
+        }
+    </script>
+</body>
+</html>
