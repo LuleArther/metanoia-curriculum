@@ -4,8 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metanoia: Transforming Plastic into Potential</title>
-  <link rel="stylesheet" href="/assets/css/light.css">
-  <link rel="stylesheet" href="/assets/libs/aos.css">
+  <link rel="stylesheet" href="./assets/css/light.css">
+  <style>
+    /* Quick fixes for demo purposes */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: white;
+      padding: 2em;
+      border-radius: 10px;
+      max-width: 80%;
+      text-align: center;
+    }
+    h1 {
+      color: #2E7D32;
+    }
+    .role-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .role-btn {
+      background: none;
+      border: 2px solid #2E7D32;
+      color: #2E7D32;
+      padding: 15px 30px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .role-btn:hover {
+      background: #2E7D32;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <!-- Role Selection Overlay -->
@@ -16,30 +67,27 @@
       
       <div class="role-buttons">
         <button id="student-btn" class="role-btn student-btn">
-          <img src="/assets/images/icons/student.svg" alt="">
           I'm a Student
         </button>
         <button id="teacher-btn" class="role-btn teacher-btn">
-          <img src="/assets/images/icons/teacher.svg" alt="">
           I'm a Teacher
         </button>
       </div>
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="/assets/libs/aos.min.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/role-switch.js"></script>
+  <!-- Basic Scripts -->
   <script>
-    // Initialize AOS animations
-    AOS.init();
+    // Simple role selection logic
+    document.getElementById('student-btn').addEventListener('click', function() {
+      localStorage.setItem('role', 'student');
+      window.location.href = './student/index.html';
+    });
     
-    // Check if role already exists
-    document.addEventListener('DOMContentLoaded', function() {
-      checkRole();
+    document.getElementById('teacher-btn').addEventListener('click', function() {
+      localStorage.setItem('role', 'teacher');
+      window.location.href = './teacher/index.html';
     });
   </script>
 </body>
 </html>
-

@@ -1,0 +1,137 @@
+[
+    {
+      "id": "teacher-resource-1",
+      "title": "Module 1 - Plastic Detective Activity Guide",
+      "description": "Detailed facilitation guide for the Plastic Detective activity, including preparation instructions, discussion prompts, and assessment guidance.",
+      "url": "../assets/downloads/plastic_detective_guide.pdf",
+      "type": "activity-guide",
+      "modules": [1],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-2",
+      "title": "Module 1 - Uganda Plastic Waste Factsheet",
+      "description": "Comprehensive data on plastic waste challenges in Uganda, with visual elements and discussion questions for classroom use.",
+      "url": "../assets/downloads/uganda_plastic_factsheet.pdf",
+      "type": "factsheet",
+      "modules": [1],
+      "country": "Uganda"
+    },
+    {
+      "id": "teacher-resource-3",
+      "title": "Module 1 - South Africa Plastic Waste Factsheet",
+      "description": "Comprehensive data on plastic waste challenges in South Africa, with visual elements and discussion questions for classroom use.",
+      "url": "../assets/downloads/south_africa_plastic_factsheet.pdf",
+      "type": "factsheet",
+      "modules": [1],
+      "country": "South Africa"
+    },
+    {
+      "id": "teacher-resource-4",
+      "title": "Module 2 - Circular Economy Models Presentation",
+      "description": "Slide deck explaining linear, recycling, and circular economy models with African examples for classroom presentations.",
+      "url": "../assets/downloads/circular_economy_slides.pptx",
+      "type": "presentation",
+      "modules": [2],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-5",
+      "title": "Module 3 - Iceberg Model Templates",
+      "description": "Printable templates for the Iceberg Model activity in various formats (individual worksheets, group posters, etc.).",
+      "url": "../assets/downloads/iceberg_templates.pdf",
+      "type": "worksheet",
+      "modules": [3],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-6",
+      "title": "Module 4 - Assumption Mapping Guide",
+      "description": "Facilitation guide for the Assumption Detectives activity, including example assumption maps and question prompts.",
+      "url": "../assets/downloads/assumption_mapping_guide.pdf",
+      "type": "activity-guide",
+      "modules": [4],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-7",
+      "title": "Module 5 - Design Thinking Workshop Guide",
+      "description": "Step-by-step facilitation guide for running the Design for Impact workshop, including timing, materials management, and troubleshooting tips.",
+      "url": "../assets/downloads/design_thinking_guide.pdf",
+      "type": "activity-guide",
+      "modules": [5],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-8",
+      "title": "Module 6 - Stakeholder Mapping Templates",
+      "description": "Printable templates and examples for stakeholder mapping activities, including influence/interest grids and partnership strategy worksheets.",
+      "url": "../assets/downloads/stakeholder_templates.pdf",
+      "type": "worksheet",
+      "modules": [6],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-9",
+      "title": "Module 7 - Communication Strategy Guide",
+      "description": "Guide to facilitating effective message development and communication planning for environmental advocacy.",
+      "url": "../assets/downloads/communication_guide.pdf",
+      "type": "activity-guide",
+      "modules": [7],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-10",
+      "title": "Module 8 - Action Planning Templates",
+      "description": "Printable templates for personal and group action planning to support sustained environmental leadership.",
+      "url": "../assets/downloads/action_planning_templates.pdf",
+      "type": "worksheet",
+      "modules": [8],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-11",
+      "title": "Uganda National Curriculum Alignment Guide",
+      "description": "Detailed mapping of Metanoia modules to Uganda national curriculum standards for O-Level and A-Level subjects.",
+      "url": "../assets/downloads/uganda_curriculum_alignment.pdf",
+      "type": "curriculum-guide",
+      "modules": [1, 2, 3, 4, 5, 6, 7, 8],
+      "country": "Uganda"
+    },
+    {
+      "id": "teacher-resource-12",
+      "title": "South Africa CAPS Alignment Guide",
+      "description": "Detailed mapping of Metanoia modules to South Africa CAPS curriculum standards for GET and FET phases.",
+      "url": "../assets/downloads/sa_caps_alignment.pdf",
+      "type": "curriculum-guide",
+      "modules": [1, 2, 3, 4, 5, 6, 7, 8],
+      "country": "South Africa"
+    },
+    {
+      "id": "teacher-resource-13",
+      "title": "Assessment Rubrics Package",
+      "description": "Comprehensive collection of assessment rubrics for all modules, with guidance on implementation and adaptation.",
+      "url": "../assets/downloads/assessment_rubrics.pdf",
+      "type": "assessment",
+      "modules": [1, 2, 3, 4, 5, 6, 7, 8],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-14",
+      "title": "Materials Alternatives Guide",
+      "description": "Detailed guide to alternative materials for all activities, with emphasis on locally available options for resource-limited settings.",
+      "url": "../assets/downloads/materials_alternatives.pdf",
+      "type": "implementation-guide",
+      "modules": [1, 2, 3, 4, 5, 6, 7, 8],
+      "country": null
+    },
+    {
+      "id": "teacher-resource-15",
+      "title": "Differentiation Strategies Guide",
+      "description": "Guide to adapting activities for diverse learning needs, including support for struggling learners and extension activities for advanced students.",
+      "url": "../assets/downloads/differentiation_guide.pdf",
+      "type": "implementation-guide",
+      "modules": [1, 2, 3, 4, 5, 6, 7, 8],
+      "country": null
+    }
+  ]

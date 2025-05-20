@@ -1,0 +1,95 @@
+[
+    {
+      "title": "Module 1: Awakening to Plastic",
+      "content": "Understanding Our Relationship with a Complex Material. How has plastic changed our lives, and what does our relationship with it reveal about our world? Plastic has transformed how we live, making products more affordable, accessible, and convenient. Yet this remarkable material has created one of our most urgent environmental challenges. In Uganda, approximately 600 tons of plastic waste is generated daily in Kampala alone, with only about 6% being properly recycled. Meanwhile, South Africa produces about 2.4 million tons of plastic waste annually, with recycling rates hovering around 14%.",
+      "url": "/student/modules/module1.html",
+      "type": "module",
+      "module": 1,
+      "tags": ["plastic waste", "plastic journey", "material analysis"]
+    },
+    {
+      "title": "Module 2: Reimagining Waste",
+      "content": "Introduction to Circular Economy Thinking. How might we transform our \"take-make-waste\" approach to create systems where plastic never becomes waste? Our current economic system largely follows a linear model: we extract resources, make products, and discard them as waste. This \"take-make-waste\" approach assumes infinite resources and somewhere to put our growing mountains of waste—assumptions our planet can no longer support. The circular economy offers a different vision. It mimics natural systems where nothing is wasted—one organism's waste becomes another's food.",
+      "url": "/student/modules/module2.html",
+      "type": "module",
+      "module": 2,
+      "tags": ["circular economy", "waste", "recycling", "sustainability"]
+    },
+    {
+      "title": "Module 3: Seeing Beneath the Surface",
+      "content": "Systems Thinking Tools. How can we uncover the deeper causes of plastic pollution that aren't immediately visible? When we look at environmental challenges like plastic pollution, we often focus only on what's immediately visible—the plastic bottle on the beach, the clogged drainage ditch, or the overflowing waste bin. But these visible problems are just the \"tip of the iceberg.\" Beneath the surface lie the patterns, structures, and mindsets that keep creating these problems, even when we try to address the symptoms.",
+      "url": "/student/modules/module3.html",
+      "type": "module",
+      "module": 3,
+      "tags": ["systems thinking", "iceberg model", "root causes"]
+    },
+    {
+      "title": "Module 4: Unlearning to Innovate",
+      "content": "Cultivating Beginner's Mindset. How might we shed our preconceptions to see plastic challenges with fresh eyes? We often think that knowledge is always an advantage. But sometimes, what we \"know\" becomes a barrier to innovation. Our assumptions, habits, and established ways of thinking can prevent us from seeing new possibilities. In environmental work, breakthrough solutions often come when we question what everyone takes for granted.",
+      "url": "/student/modules/module4.html",
+      "type": "module",
+      "module": 4,
+      "tags": ["innovation", "beginner's mind", "assumptions", "creative thinking"]
+    },
+    {
+      "title": "Module 5: Design for Impact",
+      "content": "Creative Problem-Solving Methods. How can we design effective solutions to plastic challenges using locally available resources? Up to this point, we've developed a deeper understanding of plastic waste challenges through systems thinking and begun questioning our assumptions using the beginner's mindset. Now it's time to move from problem analysis to solution creation—but how do we design solutions that work in our specific contexts?",
+      "url": "/student/modules/module5.html",
+      "type": "module",
+      "module": 5,
+      "tags": ["design thinking", "prototyping", "problem-solving", "innovation"]
+    },
+    {
+      "title": "Module 6: Collective Impact",
+      "content": "Building Partnerships and Community Action. How can we mobilize our communities to create lasting solutions to plastic waste challenges? While individual creativity and innovation are essential starting points, lasting environmental change requires collective action. Even the most brilliant solutions need community support, stakeholder engagement, and effective partnerships to create sustainable impact.",
+      "url": "/student/modules/module6.html",
+      "type": "module",
+      "module": 6,
+      "tags": ["partnerships", "community", "stakeholders", "collaboration"]
+    },
+    {
+      "title": "Module 7: Advocacy in Action",
+      "content": "Communicating for Change. How can we effectively communicate about plastic waste issues to inspire action in our communities? Having developed understanding, skills, and partnerships in previous modules, we now focus on a critical element of creating change: effective communication. Even the most brilliant solutions and strongest partnerships won't succeed without the ability to communicate in ways that inform, inspire, and activate others.",
+      "url": "/student/modules/module7.html",
+      "type": "module",
+      "module": 7,
+      "tags": ["communication", "advocacy", "messaging", "storytelling"]
+    },
+    {
+      "title": "Module 8: Sustainable Leadership",
+      "content": "From Learning to Leading. How can we translate our knowledge into action and inspire others to join the movement for a plastic-free future? Throughout this curriculum, you've developed a deep understanding of plastic waste challenges, circular economy principles, systems thinking, and collaborative approaches to environmental problems. Now it's time to focus on perhaps the most important question: How will you personally lead the change?",
+      "url": "/student/modules/module8.html",
+      "type": "module",
+      "module": 8,
+      "tags": ["leadership", "action planning", "personal commitment"]
+    },
+    {
+      "title": "Circular Economy",
+      "content": "An economic system aimed at eliminating waste by keeping materials in use through reuse, repair, refurbishment, and recycling, in contrast to the \"take-make-dispose\" linear model.",
+      "url": "/student/glossary.html#circular-economy",
+      "type": "glossary",
+      "tags": ["circular economy", "sustainability", "waste elimination"]
+    },
+    {
+      "title": "Systems Thinking",
+      "content": "An approach to understanding how different elements within a complex system interact and influence each other.",
+      "url": "/student/glossary.html#systems-thinking",
+      "type": "glossary",
+      "tags": ["systems thinking", "complexity", "interconnections"]
+    },
+    {
+      "title": "Iceberg Model",
+      "content": "A systems thinking tool that distinguishes between visible events and the underlying patterns, structures, and mental models that cause them.",
+      "url": "/student/glossary.html#iceberg-model",
+      "type": "glossary",
+      "tags": ["iceberg model", "systems thinking", "root causes"]
+    },
+    {
+      "title": "Teacher Guide: Plastic Detective Activity",
+      "content": "The Plastic Detective activity guides students through collecting, analyzing, and mapping plastic waste in their local environment. This hands-on investigation helps students understand the journey of plastic from production to disposal, building awareness of plastic waste impacts and intervention opportunities.",
+      "url": "/teacher/modules/module1.html#plastic-detective",
+      "type": "teacher resource",
+      "module": 1,
+      "tags": ["activity guide", "plastic waste", "field investigation"]
+    }
+  ]

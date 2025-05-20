@@ -1,0 +1,206 @@
+[
+    {
+      "id": "module1-quiz",
+      "title": "Module 1 Knowledge Check",
+      "description": "Test your understanding of plastic waste concepts from Module 1",
+      "moduleNumber": 1,
+      "questions": [
+        {
+          "text": "What percentage of plastic waste is recycled in Uganda?",
+          "type": "multiple-choice",
+          "options": [
+            "Around 6%",
+            "Around 20%",
+            "Around 35%",
+            "Around 50%"
+          ],
+          "correctAnswer": 0,
+          "explanation": "In Uganda, approximately 600 tons of plastic waste is generated daily in Kampala alone, with only about 6% being properly recycled."
+        },
+        {
+          "text": "What percentage of plastic waste is recycled in South Africa?",
+          "type": "multiple-choice",
+          "options": [
+            "Around 5%",
+            "Around 14%",
+            "Around 30%",
+            "Around 45%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "South Africa produces about 2.4 million tons of plastic waste annually, with recycling rates hovering around 14%."
+        },
+        {
+          "text": "What does the term 'metanoia' refer to?",
+          "type": "multiple-choice",
+          "options": [
+            "A type of biodegradable plastic",
+            "A transformative change in thinking",
+            "A mechanical recycling process",
+            "A traditional African waste management system"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The word 'metanoia' refers to a transformative change in thinking—a shift in perspective that fundamentally alters how we see and interact with the world."
+        },
+        {
+          "text": "Which of the following is NOT a common plastic challenge in Uganda?",
+          "type": "multiple-choice",
+          "options": [
+            "Single-use sachets",
+            "PET bottles",
+            "Kaveera bags",
+            "Styrofoam containers"
+          ],
+          "correctAnswer": 3,
+          "explanation": "While single-use sachets, PET bottles, and kaveera bags are all significant plastic waste challenges in Uganda, styrofoam containers were not specifically highlighted as a primary challenge in the module."
+        },
+        {
+          "text": "What percentage of Kampala residents live within 2km of informal dumpsites?",
+          "type": "multiple-choice",
+          "options": [
+            "50%",
+            "70%",
+            "90%",
+            "30%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "According to the module, 90% of Kampala residents live within 2km of informal dumpsites, highlighting the widespread exposure to plastic waste in urban areas."
+        }
+      ]
+    },
+    {
+      "id": "module2-quiz",
+      "title": "Module 2 Knowledge Check",
+      "description": "Test your understanding of circular economy concepts from Module 2",
+      "moduleNumber": 2,
+      "questions": [
+        {
+          "text": "Which of the following best describes a circular economy?",
+          "type": "multiple-choice",
+          "options": [
+            "An economy where all products are recycled",
+            "A system where materials are kept in use through reuse, repair, refurbishment, and recycling",
+            "An economy focused on biodegradable products only",
+            "A system where waste is burned for energy recovery"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A circular economy is an economic system aimed at eliminating waste by keeping materials in use through reuse, repair, refurbishment, and recycling, in contrast to the 'take-make-dispose' linear model."
+        },
+        {
+          "text": "Which traditional Ugandan practice demonstrates circular principles?",
+          "type": "multiple-choice",
+          "options": [
+            "Ensansa (banana fiber) utilization",
+            "Charcoal production",
+            "Commercial coffee farming",
+            "Urban transportation systems"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The Buganda practice of ensansa (banana fiber) utilization demonstrates circularity, where every part of the banana plant serves a purpose—fruit for food, leaves for cooking, stems for mulch, and fibers for crafts and cordage."
+        },
+        {
+          "text": "Which South African circular economy innovation uses recycled plastic bags with integrated solar panels?",
+          "type": "multiple-choice",
+          "options": [
+            "The Litterboom Project",
+            "Use-It",
+            "Rethaka's Repurpose Schoolbags",
+            "EcoPlastile"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Rethaka's Repurpose Schoolbags are manufactured from recycled plastic bags with integrated solar panels that charge during the walk to school, providing light for evening studying in areas with limited electricity."
+        },
+        {
+          "text": "What are the three main economic models discussed in Module 2?",
+          "type": "multiple-choice",
+          "options": [
+            "Capitalist, Socialist, and Mixed economies",
+            "Linear, Recycling, and Circular economies",
+            "Traditional, Modern, and Sustainable economies",
+            "Extraction, Production, and Consumption economies"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Module 2 explores three economic models: Linear Economy (take-make-waste), Recycling Economy (where some materials return to production), and Circular Economy (where materials continually flow through the system)."
+        },
+        {
+          "text": "What is the main limitation of the linear 'take-make-waste' model?",
+          "type": "multiple-choice",
+          "options": [
+            "It's too slow for modern production needs",
+            "It's too expensive for businesses to implement",
+            "It assumes infinite resources and unlimited waste capacity",
+            "It requires too much technological innovation"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The 'take-make-waste' approach assumes infinite resources and somewhere to put our growing mountains of waste—assumptions our planet can no longer support."
+        }
+      ]
+    },
+    {
+      "id": "module3-quiz",
+      "title": "Module 3 Knowledge Check",
+      "description": "Test your understanding of systems thinking concepts from Module 3",
+      "moduleNumber": 3,
+      "questions": [
+        {
+          "text": "What are the four levels of the Iceberg Model from top to bottom?",
+          "type": "multiple-choice",
+          "options": [
+            "Events, Patterns, Structures, Mental Models",
+            "Symptoms, Causes, Systems, Beliefs",
+            "Visible, Hidden, Structural, Cultural",
+            "Problems, Analysis, Solutions, Implementation"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The four levels of the Iceberg Model from top to bottom are: Events (the visible incidents we can easily see), Patterns (trends that occur over time), Structures (policies, systems, and physical infrastructures that create the patterns), and Mental Models (the beliefs, assumptions, and values that create and sustain these structures)."
+        },
+        {
+          "text": "What is a 'reinforcing relationship' in a causal loop?",
+          "type": "multiple-choice",
+          "options": [
+            "A relationship where one variable directly controls another",
+            "A relationship where change in one element amplifies change in another",
+            "A relationship that always results in positive outcomes",
+            "A relationship that strengthens over time regardless of other factors"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A reinforcing relationship in a causal loop is one where a change in one element amplifies or reinforces change in another, often creating escalation or growth."
+        },
+        {
+          "text": "Which level of the Iceberg Model contains 'Limited waste collection in informal settlements'?",
+          "type": "multiple-choice",
+          "options": [
+            "Events",
+            "Patterns",
+            "Structures",
+            "Mental Models"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Limited waste collection in informal settlements is an example of a structure - a system, policy, or physical infrastructure that creates patterns of behavior and events."
+        },
+        {
+          "text": "Which of the following is an example of a 'mental model' related to plastic waste?",
+          "type": "multiple-choice",
+          "options": [
+            "Plastic bottles washing up on beaches",
+            "Seasonal spikes in beach pollution",
+            "Extended Producer Responsibility legislation",
+            "Belief that individually packaged items are more hygienic"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The belief that individually packaged items are more hygienic is an example of a mental model - a deeply held belief, assumption, or value that shapes how we see the world and underlies the structures we create."
+        },
+        {
+          "text": "Which level of the Iceberg Model typically offers the most powerful leverage for creating lasting change?",
+          "type": "multiple-choice",
+          "options": [
+            "Events",
+            "Patterns",
+            "Structures",
+            "Mental Models"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Mental models typically offer the most powerful leverage for creating lasting change. While addressing events provides quick visible fixes and changing structures can have significant impacts, transforming the underlying beliefs and assumptions (mental models) that create those structures leads to the most profound and sustainable change."
+        }
+      ]
+    }
+  ]
